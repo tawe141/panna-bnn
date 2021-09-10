@@ -29,8 +29,8 @@ def test_transform():
 
 
 def test_inmemory():
-    ds = InMemoryPANNA(True, True)
-    normal_ds = PANNADiamineDataset(True, True)
+    ds = InMemoryPANNA(standardize_x=True, standardize_y=True)
+    normal_ds = PANNADiamineDataset(standardize_x=True, standardize_y=True)
 
     sample = ds[0]
     normal_sample = normal_ds[0]
