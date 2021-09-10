@@ -1,0 +1,13 @@
+name: panna-bnn
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - numpy
+  - scipy
+  - pytorch=1.8
+  - tqdm
+  - cudatoolkit=10.1
+  - pyro
+  - pip:
+      - wandb

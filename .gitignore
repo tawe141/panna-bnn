@@ -1,0 +1,6 @@
+data/nograd_bulk
+experiments/bnn.py
+wandb
+.pytest_cache
+.idea
+*/__pycache__
