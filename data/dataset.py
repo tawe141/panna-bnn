@@ -52,8 +52,8 @@ class PANNADiamineDataset(Dataset):
 
 
 class InMemoryPANNA(PANNADiamineDataset):
-    def __init__(self, standardize_x=False, standardize_y=False):
-        super(InMemoryPANNA, self).__init__(standardize_x, standardize_y)
+    def __init__(self, data_directory='data/nograd_bulk', standardize_x=False, standardize_y=False):
+        super(InMemoryPANNA, self).__init__(data_directory, standardize_x, standardize_y)
         self._cache = [super(InMemoryPANNA, self).__getitem__(i) for i in tqdm.trange(self.__len__(), desc='Caching data into memory... ')]
 
     def __getitem__(self, item):
